@@ -3,7 +3,7 @@
 逆向 `RemakeFace Ai.apk`（v1.7.7 PRO 破解版，`com.photoeditor.remakemefaceswapaigenerator`）后端协议后
 重新封装的可部署生图工作站：
 
-- **WebUI**：暗房实验室风格（按 HaizhucodexDesignSkill 标准重设计），桌面 / 移动端比例自适应，管理员密码访问
+- **WebUI**：HaizhuDesignSkill 深色工作台（Dark AI workspace：电光蓝单强调 + 三层表面分层 + 克制动效），底部固定生图输入栏 + 历史画廊，桌面 / 移动端自适应，管理员密码访问
 - **9 个 PRO 模型全部解锁**（实时 config 下发，`priceCredit=0`，不受限制）
 - **OpenAI 兼容 API 网关**：`/v1/models` + `/v1/images/generations`，Bearer Token 鉴权
 - **能力**：文生图 / 图生图（参考图）/ 人脸替换（faceswap）/ 多图混合（multifaceswap）/ 人脸检测 / NSFW 检测
@@ -26,6 +26,15 @@ python3 -m uvicorn gateway.app:app --host 0.0.0.0 --port 8611
 ```
 
 浏览器打开 `http://<host>:8611` → 输入管理员密码（默认 `admin123`）进入工作站。
+
+### 界面说明（HaizhuDesignSkill · Dark AI workspace）
+
+- 顶部：固定导航（实色表面 + 边框分层，无玻璃拟态），RF 徽标 + 在线状态 + 文生图/换脸切换 + 退出
+- 底部：悬浮生图输入栏（提示词 + 模型/比例/数量/参考图参数），蓝底生成按钮
+- 主体：历史任务画廊（响应式网格），支持搜索、状态筛选、点击大图预览（左右切换/下载/新窗口）
+- 换脸：切换顶部分页后上传源图/目标图，可选增强画质
+- 主题：强制深色工作台（`#0a0e14` 底 / `#11161f` 表面 / `#4da3ff` 电光蓝）
+- 设计规范：单强调色、三层表面分层、动效只用于状态反馈、`prefers-reduced-motion` 全关、`:focus-visible` 全局描边
 
 ### systemd 部署
 

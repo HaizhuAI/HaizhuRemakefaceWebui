@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+state/
+.env
+data/generated/
+data/jobs.json
+data/server.log
+artifacts/
+*.bak
+*.gptstudio

@@ -12,7 +12,7 @@ def login(page):
     page.fill("#pw", "admin123")
     page.click("#f button[type=submit]")
     page.wait_for_url(BASE + "/", timeout=8000)
-    page.wait_for_selector("#modelGrid .model-opt", timeout=8000)
+    page.wait_for_function("document.querySelectorAll('#modelSelect option').length >= 9", timeout=8000)
 
 with sync_playwright() as p:
     errors = []
@@ -23,28 +23,28 @@ with sync_playwright() as p:
     page.on("console", lambda m: errors.append(f"[{m.type}] {m.text}") if m.type == "error" else None)
     page.on("pageerror", lambda e: errors.append(f"[pageerror] {e}"))
     login(page)
-    n_models = page.locator(".model-opt").count()
-    n_ratios = page.locator(".ratio-btn").count()
+    n_models = page.locator("#modelSelect option").count()
+    n_ratios = page.locator("#ratioSelect option").count()
     print(f"desktop: models={n_models} ratios={n_ratios}")
     assert n_models >= 9, "model count"
     assert n_ratios == 6, "ratio count"
-    # click 9:16 ratio -> frame data-r should change
-    page.click('.ratio-btn[data-r="9:16"]')
-    frame_r = page.get_attribute("#frame", "data-r")
-    assert frame_r == "9:16", frame_r
-    print("ratio adaptation 9:16 -> frame data-r =", frame_r)
+    # select 9:16 ratio
+    page.select_option("#ratioSelect", "9:16")
+    ratio_val = page.input_value("#ratioSelect")
+    assert ratio_val == "9:16", ratio_val
+    print("ratio selection ok:", ratio_val)
     # back to 1:1
-    page.click('.ratio-btn[data-r="1:1"]')
-    # type a prompt, check char count
+    page.select_option("#ratioSelect", "1:1")
+    # type a prompt
     page.fill("#prompt", "cyberpunk city, neon rain, cinematic")
-    cc = page.locator("#charCount").text_content()
-    assert cc == "36", cc
-    print("char count ok:", cc)
+    pv = page.input_value("#prompt")
+    assert pv == "cyberpunk city, neon rain, cinematic", pv
+    print("prompt ok:", pv)
     page.screenshot(path=f"{SHOT}/desktop_main.png", full_page=False)
-    page.click("#tabSwap")
-    page.wait_for_selector("#swapPanel:not([hidden])")
+    page.click("#modeSeg button[data-mode=swap]")
+    page.wait_for_selector("#paramsSwap:not([hidden])")
     page.screenshot(path=f"{SHOT}/desktop_faceswap.png")
-    page.click("#tabGen")
+    page.click("#modeSeg button[data-mode=gen]")
     # health pill
     pill = page.locator("#healthText").text_content()
     print("health:", pill)
@@ -57,17 +57,11 @@ with sync_playwright() as p:
     page2.on("console", lambda m: errors.append(f"[m:{m.type}] {m.text}") if m.type == "error" else None)
     login(page2)
     page2.screenshot(path=f"{SHOT}/mobile_main.png")
-    # rail should be collapsed (bottom drawer); open it
-    rail_cls = page2.get_attribute("#rail", "class")
-    print("mobile rail class:", rail_cls)
-    page2.click("#railGrip")
-    page2.wait_for_timeout(500)
-    page2.screenshot(path=f"{SHOT}/mobile_rail_open.png")
     # select 3:4
-    page2.click('.ratio-btn[data-r="3:4"]')
-    frame_r2 = page2.get_attribute("#frame", "data-r")
-    assert frame_r2 == "3:4", frame_r2
-    print("mobile ratio ok:", frame_r2)
+    page2.select_option("#ratioSelect", "3:4")
+    ratio_val2 = page2.input_value("#ratioSelect")
+    assert ratio_val2 == "3:4", ratio_val2
+    print("mobile ratio ok:", ratio_val2)
     page2.close()
     browser.close()
 
