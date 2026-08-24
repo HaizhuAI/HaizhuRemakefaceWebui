@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>RemakeFace PRO · 管理入口</title>
+<style>
+  :root{
+    --bg:#0b0d10; --bg2:#101318; --panel:#14181f; --line:rgba(255,255,255,.08);
+    --text:#e8e6e0; --muted:#8a8f98; --dim:#5c616b;
+    --amber:#e8a23d; --amber-soft:rgba(232,162,61,.14); --amber-line:rgba(232,162,61,.45);
+    --ok:#4cc38a; --err:#e05d5d;
+    --serif:"Iowan Old Style","Songti SC","STSong","Noto Serif SC",Georgia,serif;
+    --mono:ui-monospace,"SF Mono","Cascadia Code","JetBrains Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:
+      radial-gradient(900px 500px at 85% -10%, rgba(232,162,61,.05), transparent 60%),
+      radial-gradient(700px 420px at -10% 110%, rgba(120,140,180,.05), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    display:grid;place-items:center;padding:24px;
+  }
+  .door{width:min(420px,100%);position:relative}
+  .reg{position:absolute;width:14px;height:14px;border:1px solid var(--amber-line)}
+  .reg.tl{top:-6px;left:-6px;border-right:0;border-bottom:0}
+  .reg.tr{top:-6px;right:-6px;border-left:0;border-bottom:0}
+  .reg.bl{bottom:-6px;left:-6px;border-right:0;border-top:0}
+  .reg.br{bottom:-6px;right:-6px;border-left:0;border-top:0}
+  .plate{
+    background:linear-gradient(180deg,var(--panel),var(--bg2));
+    border:1px solid var(--line);padding:44px 36px 36px;position:relative;
+  }
+  .plate::after{content:"";position:absolute;inset:0;pointer-events:none;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+  .brand{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+  .brand .mark{font:600 26px/1.1 var(--serif);letter-spacing:.5px;color:#f2efe8}
+  .brand .pro{font:600 10px var(--mono);color:var(--amber);border:1px solid var(--amber-line);
+    padding:2px 6px;letter-spacing:1.5px}
+  .sub{font:11px var(--mono);color:var(--dim);letter-spacing:1.2px;text-transform:uppercase;
+    margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+  form{display:flex;flex-direction:column;gap:8px}
+  label{font:600 11px var(--mono);color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+  input{
+    width:100%;background:rgba(0,0,0,.35);color:var(--text);
+    border:1px solid var(--line);border-radius:2px;padding:13px 14px;
+    font:15px var(--mono);outline:none;transition:border-color .15s,box-shadow .15s;
+  }
+  input:focus{border-color:var(--amber-line);box-shadow:0 0 0 3px var(--amber-soft)}
+  button{
+    margin-top:14px;background:var(--amber);color:#151209;border:0;border-radius:2px;
+    padding:14px;font:600 14px var(--mono);letter-spacing:2px;cursor:pointer;
+    transition:background .15s,transform .1s;
+  }
+  button:hover{background:#f0ad4e}
+  button:active{transform:translateY(1px)}
+  button:disabled{opacity:.5;cursor:wait}
+  #err{min-height:20px;margin-top:12px;font:12px var(--mono);color:var(--err);letter-spacing:.5px}
+  .foot{margin-top:22px;font:10px var(--mono);color:var(--dim);text-align:center;letter-spacing:1px}
+  .hint{font:11px var(--mono);color:var(--dim);margin-top:10px;letter-spacing:.3px}
+  @media (max-width:480px){
+    .plate{padding:36px 24px 28px}
+  }
+</style>
+</head>
+<body>
+<div class="door">
+  <div class="reg tl"></div><div class="reg tr"></div><div class="reg bl"></div><div class="reg br"></div>
+  <div class="plate">
+    <div class="brand"><span class="mark">RemakeFace</span><span class="pro">PRO</span></div>
+    <div class="sub">Image Generation Workstation · Admin Gate</div>
+    <form id="f" autocomplete="off">
+      <label for="pw">管理员密码</label>
+      <input id="pw" type="password" placeholder="••••••••" autofocus autocomplete="current-password">
+      <button id="btn" type="submit">进入工作站</button>
+    </form>
+    <div id="err" role="alert" aria-live="polite"></div>
+    <div class="hint">默认密码见 <span style="color:var(--muted)">.env / start.sh</span> · ADMIN_PASSWORD</div>
+  </div>
+  <div class="foot">RF/PRO · gateway v2 · admin session</div>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+$("#f").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const btn=$("#btn"),err=$("#err");
+  btn.disabled=true;err.textContent="";
+  try{
+    const r=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({password:$("#pw").value})});
+    const j=await r.json();
+    if(!r.ok) throw new Error(j.detail||"密码错误");
+    location.href="/";
+  }catch(x){err.textContent="✕ "+x.message;btn.disabled=false;$("#pw").select();}
+});
+$("#pw").addEventListener("keydown",e=>{if(e.key==="Enter")$("#f").requestSubmit()});
+</script>
+</body>
+</html>

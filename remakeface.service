@@ -1,0 +1,17 @@
+[Unit]
+Description=RemakeFace Pro Image Generation Workstation
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/remakeface-webui
+EnvironmentFile=/opt/remakeface-webui/.env
+Environment=PORT=8611
+ExecStart=/usr/bin/python3 -m uvicorn gateway.app:app --host 0.0.0.0 --port $PORT
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

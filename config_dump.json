@@ -1,0 +1,104 @@
+{
+ "_id": "695e1729ac84cbecdaf7aa7a",
+ "title": "RemakeFace Ai Android",
+ "imageUrl": "https://play-lh.googleusercontent.com/Wo60UwusL5BN2OFg_Smo2GbUX6JAIyStpvChL_L0PKk4lXUZpzUjz_DLUnJUOujGYkNN3xogppof27Lfbdyk=w480-h960",
+ "packageName": "com.photoeditor.remakemefaceswapaigenerator",
+ "ads": {
+  "isAdsEnabled": true,
+  "isActiveOpenAppAd": false,
+  "isActiveBannerAd": true,
+  "isActiveInterstitialAd": true,
+  "isActiveNativeAd": false,
+  "isActiveRewardAd": true,
+  "openAppAdId": "",
+  "bannerAdId": "ca-app-pub-8154530308895758/6454458557",
+  "interstitialAdId": "ca-app-pub-8154530308895758/6987997717",
+  "nativeAdId": "ca-app-pub-8154530308895758/1613195415",
+  "rewardAdId": "ca-app-pub-8154530308895758/5552440423",
+  "interstitialAdInterval": 1,
+  "timeoutOpenAppAd": 5000,
+  "listTestDevice": [
+   "B3EEABB8EE11C2BE770B684D95219ECB"
+  ]
+ },
+ "aiModelImageGenerator": [
+  {
+   "nameModel": "Seedream 5 Pro",
+   "model": "seedream5.0_pro",
+   "description": "Premium generation with exceptional detail and visual quality.",
+   "order": 1,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "Seedream 4.5",
+   "model": "seedream4.5",
+   "description": "Sharp, detailed, and consistent image generation.",
+   "order": 2,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "Nano Banana Pro",
+   "model": "banana_pro",
+   "description": "Best for premium, realistic, and text-heavy visuals.",
+   "order": 2,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "Nano Banana 2",
+   "model": "banana2",
+   "description": "Fast, high-quality generation and editing.",
+   "order": 2,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "GPT Image 2",
+   "model": "gpt_image_2",
+   "description": "Accurate prompts, clean edits, detailed results.",
+   "order": 3,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "Seedream 5.0",
+   "model": "seedream5.0",
+   "description": "Smarter generation with refined visual quality.",
+   "order": 3,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "Nano Banana",
+   "model": "banana",
+   "description": "Quick edits and creative image transformations.",
+   "order": 4,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "Seedream 4.0",
+   "model": "seedream4",
+   "description": "Flexible model for generation and editing.",
+   "order": 5,
+   "priceCredit": 0
+  },
+  {
+   "nameModel": "Banana 2 Lite",
+   "model": "banana2_lite",
+   "description": "Lightweight and fast generation for everyday image tasks.",
+   "order": 8,
+   "priceCredit": 0
+  }
+ ],
+ "emailSupport": "showy.laces_0c@icloud.com",
+ "urlGroupFacebook": "https://www.facebook.com/groups/1206213664304397",
+ "oneSignalAppId": "eee41b96-8a75-4910-b6ae-e68d53ef2080",
+ "privacyPolicyUrl": "https://asiasaranatelekomunikasi.blogspot.com/p/privacy-policy-face-swap-ai.html",
+ "termsOfServiceUrl": "https://asiasaranatelekomunikasi.blogspot.com/p/terms-of-service-eula.html",
+ "isRedirect": true,
+ "redirectUrl": "https://play.google.com/store/apps/details?id=com.photoeditor.remakemefaceswapaigenerator",
+ "urlGeneratePresignedUrl": "https://temp-file.masyadi.com/api/presigned",
+ "urlTask": "https://app-remakeme.masyadi.com",
+ "createdAt": "2026-01-07T08:19:53.916Z",
+ "updatedAt": "2026-07-12T22:24:18.896Z",
+ "__v": 67,
+ "cancelable": true,
+ "latestVersion": "1.3.0",
+ "noteRedirect": ""
+}

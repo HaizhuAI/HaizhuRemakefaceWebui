@@ -1,0 +1,98 @@
+INFO:     Started server process [24809]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8611 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58948 - "GET /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58782 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58792 - "POST /api/faceswap HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58798 - "GET /api/jobs/d88172aa8dff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/jobs/d88172aa8dff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /api/jobs/d88172aa8dff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38048 - "GET /api/jobs/d88172aa8dff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38052 - "GET /api/jobs/d88172aa8dff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43772 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43782 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43794 - "POST /api/login HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:43802 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43812 - "GET /api/ratios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43828 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43840 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:43846 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:43850 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43862 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43862 - "GET /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43862 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43862 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43862 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43872 - "GET /api/ratios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43884 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43884 - "GET /api/history?limit=24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43884 - "GET /api/image/d88172aa8dff_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43872 - "GET /api/image/c1a1d71b24cd_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43862 - "GET /api/image/4b9292713a8b_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43890 - "GET /api/image/e3e7bbad7890_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43894 - "GET /api/image/00bb757054a9_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43896 - "GET /api/image/0f53483f4efe_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43884 - "GET /api/image/b9c6428689c9_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43884 - "GET /api/image/2378cb2571d9_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43896 - "GET /api/image/8ce895d64b75_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43900 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43900 - "GET /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43900 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43900 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54310 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43900 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54296 - "GET /api/ratios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54296 - "GET /api/history?limit=24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54312 - "GET /api/image/e3e7bbad7890_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54296 - "GET /api/image/d88172aa8dff_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54328 - "GET /api/image/00bb757054a9_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54344 - "GET /api/image/0f53483f4efe_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43900 - "GET /api/image/c1a1d71b24cd_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54310 - "GET /api/image/4b9292713a8b_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54296 - "GET /api/image/b9c6428689c9_0.webp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46106 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:46122 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46124 - "POST /api/login HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:46130 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46134 - "GET /api/ratios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46140 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46148 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:46158 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:46164 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46170 - "POST /v1/images/generations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33130 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:33140 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33148 - "POST /api/login HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:33156 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33166 - "GET /api/ratios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33182 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33198 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:33214 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:33218 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33220 - "POST /v1/images/generations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37672 - "POST /v1/images/generations HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:53268 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:53282 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53292 - "POST /api/login HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:53296 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53298 - "GET /api/ratios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53300 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53314 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53322 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53334 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53338 - "POST /v1/images/generations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45194 - "POST /v1/images/generations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55906 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55922 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55932 - "POST /api/login HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:55948 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55960 - "GET /api/ratios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55982 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55988 - "GET /v1/models HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55998 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24809]

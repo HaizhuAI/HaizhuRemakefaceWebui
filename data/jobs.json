@@ -1,0 +1,270 @@
+{
+ "8ce895d64b75": {
+  "id": "8ce895d64b75",
+  "kind": "aiImageGen",
+  "prompt": "a tiny red cube on white",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:02:02",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/8ce895d64b75_0.webp"
+  ],
+  "error": null,
+  "api": "openai"
+ },
+ "2378cb2571d9": {
+  "id": "2378cb2571d9",
+  "kind": "aiImageGen",
+  "prompt": "cinematic portrait of a cyberpunk samurai, neon city bokeh, film grain, dramatic rim light",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:05:13",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/2378cb2571d9_0.webp"
+  ],
+  "error": null
+ },
+ "b9c6428689c9": {
+  "id": "b9c6428689c9",
+  "kind": "aiImageGen",
+  "prompt": "a small orange cat wearing a space suit, cute, white background",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:09:52",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/b9c6428689c9_0.webp"
+  ],
+  "error": null
+ },
+ "0f53483f4efe": {
+  "id": "0f53483f4efe",
+  "kind": "aiImageGen",
+  "prompt": "a small orange cat wearing a space suit, cute, white background",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:10:12",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/0f53483f4efe_0.webp"
+  ],
+  "error": null
+ },
+ "00bb757054a9": {
+  "id": "00bb757054a9",
+  "kind": "aiImageGen",
+  "prompt": "studio product shot of a mechanical wristwatch, dramatic lighting, dark background, ultra detail",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:10:31",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/00bb757054a9_0.webp"
+  ],
+  "error": null
+ },
+ "2f77c4e7e689": {
+  "id": "2f77c4e7e689",
+  "kind": "aiImageGen",
+  "prompt": "transform this portrait into an oil painting, warm light",
+  "model": "gpt_image_2",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "failed",
+  "created": "2026-08-20 16:12:50",
+  "refs": 1,
+  "imageUrls": [],
+  "error": "task failed: {'status': 'failed', 'message': 'Failed to download image from storage (403 Forbidden).'}"
+ },
+ "e3e7bbad7890": {
+  "id": "e3e7bbad7890",
+  "kind": "aiImageGen",
+  "prompt": "cyberpunk neon version of this image",
+  "model": "banana2",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:20:19",
+  "refs": 1,
+  "imageUrls": [
+   "/api/image/e3e7bbad7890_0.webp"
+  ],
+  "error": null
+ },
+ "4b9292713a8b": {
+  "id": "4b9292713a8b",
+  "kind": "aiImageGen",
+  "prompt": "a tiny rocket launching from a desk, soft light",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:21:30",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/4b9292713a8b_0.webp"
+  ],
+  "error": null,
+  "api": "openai"
+ },
+ "c1a1d71b24cd": {
+  "id": "c1a1d71b24cd",
+  "kind": "aiImageGen",
+  "prompt": "red car version",
+  "model": "banana2",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:22:41",
+  "refs": 1,
+  "imageUrls": [
+   "/api/image/c1a1d71b24cd_0.webp"
+  ],
+  "error": null,
+  "api": "openai"
+ },
+ "6f9785b0b877": {
+  "id": "6f9785b0b877",
+  "kind": "faceswap",
+  "prompt": "face swap",
+  "model": "faceswap",
+  "ratio": "-",
+  "count": 1,
+  "status": "failed",
+  "created": "2026-08-20 16:23:55",
+  "refs": 2,
+  "imageUrls": [],
+  "error": "task timeout: https://job.masyadi.com/v2/faceswap/status?id=L_hQIPPbTAihs1n0pB7g6&type=standard"
+ },
+ "195550f667aa": {
+  "id": "195550f667aa",
+  "kind": "faceswap",
+  "prompt": "face swap",
+  "model": "faceswap",
+  "ratio": "-",
+  "count": 1,
+  "status": "failed",
+  "created": "2026-08-20 16:29:24",
+  "refs": 2,
+  "imageUrls": [],
+  "error": "task timeout: https://job.masyadi.com/v2/faceswap/status?id=gAM-GvJQScMNfSRS7Zrse&type=standard"
+ },
+ "7bd5d451ad27": {
+  "id": "7bd5d451ad27",
+  "kind": "faceswap",
+  "prompt": "face swap",
+  "model": "faceswap",
+  "ratio": "-",
+  "count": 1,
+  "status": "failed",
+  "created": "2026-08-20 16:34:47",
+  "refs": 2,
+  "imageUrls": [],
+  "error": "unknown url type: 'h'"
+ },
+ "d88172aa8dff": {
+  "id": "d88172aa8dff",
+  "kind": "faceswap",
+  "prompt": "face swap",
+  "model": "faceswap",
+  "ratio": "-",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:35:39",
+  "refs": 2,
+  "imageUrls": [
+   "/api/image/d88172aa8dff_0.webp"
+  ],
+  "error": null
+ },
+ "0f930d489687": {
+  "id": "0f930d489687",
+  "kind": "aiImageGen",
+  "prompt": "a tiny red cube on white",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:36:15",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/0f930d489687_0.webp"
+  ],
+  "error": null,
+  "api": "openai"
+ },
+ "c4fdc74e13d8": {
+  "id": "c4fdc74e13d8",
+  "kind": "aiImageGen",
+  "prompt": "a tiny red cube on white",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:37:49",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/c4fdc74e13d8_0.webp"
+  ],
+  "error": null,
+  "api": "openai"
+ },
+ "31c0e27eda30": {
+  "id": "31c0e27eda30",
+  "kind": "aiImageGen",
+  "prompt": "make it red",
+  "model": "banana2",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "failed",
+  "created": "2026-08-20 16:39:12",
+  "refs": 1,
+  "imageUrls": [],
+  "error": "task failed: {'status': 'failed', 'message': 'chat to edit failed'}",
+  "api": "openai"
+ },
+ "0d74d23738a0": {
+  "id": "0d74d23738a0",
+  "kind": "aiImageGen",
+  "prompt": "a tiny red cube on white",
+  "model": "seedream5.0_pro",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:40:07",
+  "refs": 0,
+  "imageUrls": [
+   "/api/image/0d74d23738a0_0.webp"
+  ],
+  "error": null,
+  "api": "openai"
+ },
+ "84c3370803c7": {
+  "id": "84c3370803c7",
+  "kind": "aiImageGen",
+  "prompt": "make it red",
+  "model": "banana2",
+  "ratio": "1:1",
+  "count": 1,
+  "status": "completed",
+  "created": "2026-08-20 16:41:34",
+  "refs": 1,
+  "imageUrls": [
+   "/api/image/84c3370803c7_0.webp"
+  ],
+  "error": null,
+  "api": "openai"
+ }
+}
